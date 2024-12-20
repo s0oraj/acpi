@@ -1,1 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
 
+<Layout title="Advanced Coding Interview Patterns">
+  <main class="container">
+    <h1 class="main-title">Advanced Coding Interview Patterns</h1>
+    
+    <div class="image-container">
+      <img 
+        src="https://github.com/user-attachments/assets/1aa443db-47d0-47e3-9068-e4197cb8b953" 
+        alt="Advanced Coding Patterns"
+        width="800"
+        height="400"
+        class="header-image"
+      />
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        This document contains 11 advanced coding interview patterns, each with 20 carefully selected questions that progressively build upon each other. These patterns are designed to help you master complex algorithmic concepts and prepare for challenging technical interviews.
+      </p>
+
+      <h2>Table of Contents</h2>
+      <ol class="toc">
+        <li><a href="#counting-pattern">Counting Pattern</a></li>
+        <li><a href="#monotonic-queue-pattern">Monotonic Queue Pattern</a></li>
+        <li><a href="#simulation-pattern">Simulation Pattern</a></li>
+        <li><a href="#linear-sorting-pattern">Linear Sorting Pattern</a></li>
+        <li><a href="#meet-in-the-middle-pattern">Meet in the Middle Pattern</a></li>
+        <li><a href="#mos-algorithm-pattern">MO's Algorithm Pattern</a></li>
+        <li><a href="#serialize-deserialize-pattern">Serialize/Deserialize Pattern</a></li>
+        <li><a href="#clone-pattern">Clone Pattern Analysis</a></li>
+        <li><a href="#articulation-points-pattern">Articulation Points and Bridges Pattern</a></li>
+        <li><a href="#segment-tree-pattern">Segment Tree Pattern</a></li>
+        <li><a href="#binary-indexed-tree-pattern">Binary Indexed Tree (Fenwick Tree) Pattern</a></li>
+      </ol>
+
+      <h2>How to Use This Guide</h2>
+      <ul class="guide">
+        <li>Each pattern contains 20 questions, organized by sub-categories</li>
+        <li>Questions are primarily from LeetCode, with some from GeeksForGeeks and other platforms</li>
+        <li>Difficulty levels are indicated: 🟢 Easy, 🟠 Medium, 🔴 Hard</li>
+        <li>Each question includes a brief description and information on how it progresses from the previous one</li>
+        <li>Focus on understanding the core differences and progression between questions in each pattern</li>
+      </ul>
+
+      <!-- Content sections for each pattern -->
+      {/* Add all pattern sections here */}
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+  }
+
+  .image-container {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .content {
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    color: #555;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  .toc {
+    list-style-type: decimal;
+    padding-left: 2rem;
+  }
+
+  .toc li {
+    margin: 0.5rem 0;
+  }
+
+  .toc a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .toc a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+
+  .guide {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  .guide li {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+
+  /* Print-specific styles */
+  @media print {
+    .container {
+      max-width: none;
+      padding: 0;
+    }
+
+    .header-image {
+      max-width: 600px;
+      height: auto;
+    }
+
+    h2 {
+      break-before: page;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+</style>
